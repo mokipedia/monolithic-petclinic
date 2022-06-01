@@ -1,5 +1,7 @@
 package org.springframework.samples.petclinic.vets;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
 
 public class VetDTO {
@@ -45,6 +47,7 @@ public class VetDTO {
         this.specialties = specialties;
     }
 
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     public int getNrOfSpecialties() {
         return specialties.size();
     }
