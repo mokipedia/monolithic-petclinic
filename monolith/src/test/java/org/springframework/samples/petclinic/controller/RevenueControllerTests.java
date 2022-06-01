@@ -20,7 +20,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.samples.petclinic.model.YearlyRevenue;
+import org.springframework.samples.petclinic.revenues.RevenueController;
+import org.springframework.samples.petclinic.revenues.YearlyRevenue;
 import org.springframework.samples.petclinic.service.ClinicService;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -33,8 +34,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
-@WebMvcTest(controllers = ManagementController.class)
-class ManagementControllerTests {
+@WebMvcTest(controllers = RevenueController.class)
+class RevenueControllerTests {
 
     static final List<YearlyRevenue> EXPECTED_REVENUES = asList(
         new YearlyRevenue(2020, 333L)

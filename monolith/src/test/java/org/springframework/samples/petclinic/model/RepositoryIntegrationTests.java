@@ -18,12 +18,10 @@ package org.springframework.samples.petclinic.model;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.samples.petclinic.db.RevenueRepository;
-import org.springframework.samples.petclinic.vets.Vet;
-import org.springframework.samples.petclinic.vets.VetRepository;
+import org.springframework.samples.petclinic.revenues.RevenueRepository;
 import org.springframework.samples.petclinic.db.VisitRepository;
+import org.springframework.samples.petclinic.revenues.YearlyRevenue;
 
-import java.util.Collection;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
