@@ -2,15 +2,13 @@ package org.springframework.samples.petclinic.service;
 
 import org.springframework.samples.petclinic.db.OwnerRepository;
 import org.springframework.samples.petclinic.db.PetRepository;
-import org.springframework.samples.petclinic.db.RevenueRepository;
-import org.springframework.samples.petclinic.vets.VetRepository;
+import org.springframework.samples.petclinic.revenues.RevenueRepository;
 import org.springframework.samples.petclinic.db.VisitRepository;
 import org.springframework.samples.petclinic.model.Owner;
 import org.springframework.samples.petclinic.model.Pet;
 import org.springframework.samples.petclinic.model.PetType;
-import org.springframework.samples.petclinic.vets.Vet;
 import org.springframework.samples.petclinic.model.Visit;
-import org.springframework.samples.petclinic.model.YearlyRevenue;
+import org.springframework.samples.petclinic.revenues.YearlyRevenue;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
