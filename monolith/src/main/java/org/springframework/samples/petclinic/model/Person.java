@@ -27,6 +27,7 @@ import javax.validation.constraints.NotEmpty;
 @MappedSuperclass
 public class Person extends BaseEntity {
 
+
     @Column(name = "first_name")
     @NotEmpty
     private String firstName;
