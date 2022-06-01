@@ -32,19 +32,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 class RepositoryIntegrationTests {
 
     @Autowired
-    VetRepository vetsRepository;
-
-    @Autowired
     VisitRepository visitsRepository;
 
     @Autowired
     RevenueRepository revenueRepository;
 
-    @Test
-    void testFindVets() {
-        Collection<Vet> all = vetsRepository.findAll();
-        assertThat(all).hasSize(6);
-    }
+
 
     @Test
     void testFindVisits() {
