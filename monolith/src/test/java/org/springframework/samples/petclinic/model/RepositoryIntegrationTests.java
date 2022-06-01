@@ -32,22 +32,10 @@ class RepositoryIntegrationTests {
     @Autowired
     VisitRepository visitsRepository;
 
-    @Autowired
-    RevenueRepository revenueRepository;
-
-
-
     @Test
     void testFindVisits() {
         List<Visit> visits = this.visitsRepository.findByPetId(7);
         assertThat(visits).hasSize(2);
         assertThat(visits.get(0).getCost()).isEqualTo(100);
-    }
-
-    @Test
-    void testGenerateRevenueReport() {
-        List<YearlyRevenue> yearlyRevenues = this.revenueRepository.listYearlyRevenue();
-        assertThat(yearlyRevenues).hasSize(1);
-        assertThat(yearlyRevenues.get(0).getTotal()).isEqualTo(800L);
     }
 }

@@ -181,14 +181,6 @@ class ClinicServiceTests {
         assertThat(visitArr[0].getCost()).isEqualTo(100);
     }
 
-    @Test
-    void shouldListYearlyRevenue() {
-        List<YearlyRevenue> yearlyRevenues = service.listYearlyRevenue();
-
-        assertThat(yearlyRevenues).hasSize(1);
-        assertThat(yearlyRevenues.get(0).getTotal()).isEqualTo(800L);
-    }
-
     /**
      * Look up the entity of the given class with the given id in the given collection.
      *
